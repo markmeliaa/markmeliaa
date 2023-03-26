@@ -7,6 +7,7 @@
 class GameplayAIProgrammer:
     def __init__(self):
         self.name = "Mark Melia"
+        self.pronouns = "He|Him"
         self.role = "Gameplay AI Programmer"
         self.language_spoken = ["spa_ESP", "en_US", "fr_FRA"]
         
