@@ -14,6 +14,6 @@ class GameDeveloper:
     def say_hi(self):
         print("Hi! Welcome to my GitHub profile, hope you find some of my work interesting!")
         
-me = GameplayAIProgrammer()
+me = GameDeveloper()
 me.say_hi()
 ```
