@@ -7,7 +7,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-class GameDeveloper:
+class GameDev:
     def __init__(self):
         self.name = "Mark Melia"
         self.pronouns = "He|Him"
@@ -17,6 +17,6 @@ class GameDeveloper:
     def say_hi(self):
         print("Hi! Welcome to my GitHub profile, I hope you find some of my work interesting!")
         
-me = GameDeveloper()
+me = GameDev()
 me.say_hi()
 ```
