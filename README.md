@@ -1,10 +1,6 @@
 # Hello World 👋
 
-```c++
-#include <iostream>
-#include <string>
-#include <vector>
-
+<!---
 /*
 class GameDev
 {
@@ -29,6 +25,12 @@ private:
     std::vector<std::string> languagesSpoken;
 }
 */
+-->
+
+```c++
+#include <iostream>
+#include <string>
+#include <vector>
 
 int main()
 {
