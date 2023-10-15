@@ -15,7 +15,7 @@ public:
 
     void SayHi()
     {
-        std::cout << "Hi! Welcome to my GitHub profile, I hope you find my work interesting!" << std::endl;
+        std::cout << "Hi! Welcome to my GitHub profile, I hope you find some of my work interesting!" << std::endl;
     }
 
 private:
@@ -32,6 +32,8 @@ private:
 #include <string>
 #include <vector>
 
+#include "GameDev.h"
+
 int main()
 {
     std::string myName = "Mark Melia";
@@ -40,8 +42,9 @@ int main()
     std::vector<std::string> myLanguagesSpoken {"Spanish", "English", "Catalan", "French"};
 
     GameDev me = new GameDev(myName, myPronouns, myMainRoles, myLanguagesSpoken);
-    me.SayHi();
+    me.SayHi(); // Hi! Welcome to my GitHub profile, I hope you find some of my work interesting!
 
     std::cin.get();
+    return 0;
 }
 ```
