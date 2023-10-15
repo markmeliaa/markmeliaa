@@ -31,6 +31,7 @@ private:
 #include <iostream>
 #include <string>
 #include <vector>
+#include <memory>
 
 #include "GameDev.h"
 
@@ -41,8 +42,8 @@ int main()
     std::vector<std::string> myMainRoles {"Gameplay Programmer", "AI Programmer", "Game Designer"};
     std::vector<std::string> myLanguagesSpoken {"Spanish", "English", "Catalan", "French"};
 
-    GameDev me = new GameDev(myName, myPronouns, myMainRoles, myLanguagesSpoken);
-    me.SayHi(); // Hi! Welcome to my GitHub profile, I hope you find some of my work interesting!
+    unique_ptr<GameDev> me = make_unique<GameDev>(myName, myPronouns, myMainRoles, myLanguagesSpoken);
+    me->SayHi(); // Hi! Welcome to my GitHub profile, I hope you find some of my work interesting!
 
     std::cin.get();
     return 0;
