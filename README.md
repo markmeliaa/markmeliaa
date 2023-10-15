@@ -1,22 +1,38 @@
 # Hello World 👋
 
-<!--![visitors](https://visitor-badge.laobi.icu/badge?page_id=markmeliaa.markmeliaa)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)-->
+```c++
+#include <iostream>
+#include <string>
+#include <vector> 
 
-```python
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+class GameDev
+{
+public:
+    GameDev(std::string name, std::string pronouns, std::vector<std::string> mainRoles, std::vector<std::string> languagesSpoken) :
+        name(name), pronouns(pronouns), mainRoles(mainRoles), languagesSpoken(languagesSpoken)
+    {
+    }
+    void SayHi()
+    {
+        std::cout << "Hi! Welcome to my GitHub profile, I hope you find my work interesting!" << std::endl;
+    }
+private:
+    std::string name;
+    std::string pronouns;
+    std::vector<std::string> mainRoles;
+    std::vector<std::string> languagesSpoken;
+}
 
-class GameDev:
-    def __init__(self):
-        self.name = "Mark Melia"
-        self.pronouns = "He|Him"
-        self.main_roles = ["Gameplay Programmer", "AI Programmer", "Game Designer"]
-        self.languages_spoken = ["spa_ESP", "en_US", "fr_FRA"]
-        
-    def say_hi(self):
-        print("Hi! Welcome to my GitHub profile, I hope you find some of my work interesting!")
-        
-me = GameDev()
-me.say_hi()
+int main()
+{
+    std::string myName = "Mark Melia";
+    std::string myPronouns = "He|Him";
+    std::vector<std::string> myMainRoles {"Gameplay Programmer", "AI Programmer", "Game Designer"};
+    std::vector<std::string> myLanguagesSpoken {"Spanish", "English", "Catalan", "French"};
+
+    GameDev me = new GameDev(myName, myPronouns, myMainRoles, myLanguagesSpoken);
+    me.SayHi();
+
+    std::cin.get();
+}
 ```
